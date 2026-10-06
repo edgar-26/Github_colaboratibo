@@ -19,3 +19,7 @@ main.py
 
 - Edgar Rodriguez
 - Ricardo Asprilla
+
+## Actualización
+
+Se agregaron mejoras al proyecto por Edgar.
