@@ -12,5 +12,7 @@ con otros compañeros.
 Gracias al trabajo en equipo logró terminar
 su proyecto con éxito.
 
+Un día, una empresa reconoció su talento y le ofreció su primer trabajo como desarrollador.
+
 Fin.
 """)
