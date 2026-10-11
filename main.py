@@ -1,44 +1,59 @@
+
 import operaciones
 import cuento
 import saludo
 
-print("====== PROYECTO COLABORATIVO ======")
 
-nombre = input("Ingrese su nombre: ")
+def leer_numero(mensaje):
+    """Solicita un número y valida la entrada."""
+    while True:
+        try:
+            return float(input(mensaje))
+        except ValueError:
+            print("Error: debes ingresar un número válido.")
 
-print(saludo.saludar(nombre))
 
-while True:
+def ejecutar():
+    print("====== PROYECTO COLABORATIVO ======")
 
-    print("\nMENU")
+    nombre = input("Ingrese su nombre: ").strip()
 
-    print("1. Operaciones")
-    print("2. Mostrar cuento")
-    print("3. Salir")
+    if not nombre:
+        nombre = "Estudiante"
 
-    opcion = input("Seleccione una opción: ")
+    print(saludo.saludar(nombre))
 
-    if opcion == "1":
+    while True:
+        print("\n========== MENÚ ==========")
+        print("1. Operaciones matemáticas")
+        print("2. Mostrar cuento")
+        print("3. Salir")
 
-        numero1 = float(input("Primer número: "))
-        numero2 = float(input("Segundo número: "))
+        opcion = input("Seleccione una opción: ").strip()
 
-        print()
+        if opcion == "1":
+            numero1 = leer_numero("Primer número: ")
+            numero2 = leer_numero("Segundo número: ")
 
-        print("Suma:", operaciones.sumar(numero1, numero2))
-        print("Resta:", operaciones.restar(numero1, numero2))
-        print("Multiplicación:", operaciones.multiplicar(numero1, numero2))
-        print("División:", operaciones.dividir(numero1, numero2))
+            print("\n--- Resultados ---")
+            print("Suma:", operaciones.sumar(numero1, numero2))
+            print("Resta:", operaciones.restar(numero1, numero2))
+            print("Multiplicación:", operaciones.multiplicar(numero1, numero2))
+            print("División:", operaciones.dividir(numero1, numero2))
 
-    elif opcion == "2":
+        elif opcion == "2":
+            cuento.mostrar_cuento()
 
-        cuento.mostrar_cuento()
+        elif opcion == "3":
+            print(saludo.despedir(nombre))
+            print("Gracias por utilizar el programa.")
+            break
 
-    elif opcion == "3":
+        else:
+            print("Opción incorrecta. Selecciona 1, 2 o 3.")
 
-        print(saludo.despedir(nombre))
-        break
 
-    else:
+if __name__ == "__main__":
+    ejecutar()
 
-        print("Opción incorrecta")
+
