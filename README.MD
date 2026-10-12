@@ -19,3 +19,4 @@ main.py
 
 - Edgar Rodriguez
 - Ricardo Asprilla
+- Erick Ortega 
