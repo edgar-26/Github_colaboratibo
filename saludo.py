@@ -1,8 +1,5 @@
-def saludar(nombre):
+nombre = input("Ingresa tu nombre: ")
+edad = input("Ingresa tu edad: ")
+ciudad = input("Ingresa tu ciudad de residencia: ")
 
-    return f"Hola {nombre}, bienvenido al proyecto."
-
-
-def despedir(nombre):
-
-    return f"Hasta luego {nombre}."
+print("¡Hola, " + nombre + "! Tienes " + edad + " años y vives en " + ciudad + ".")
