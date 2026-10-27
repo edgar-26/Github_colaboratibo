@@ -1,0 +1,24 @@
+nombre = input("Ingresa tu nombre: ")
+edad = input("Ingresa tu edad: ")
+ciudad = input("Ingresa tu ciudad de residencia: ")
+
+
+profesion = input("¿A qué te dedicas o qué te gusta hacer?: ")
+
+
+companero = input("¿Cómo se llama tu mascota o mejor amigo/a?: ")
+
+
+lugar_favorito = input("Menciona un lugar misterioso o tu sitio favorito de tu ciudad: ")
+
+
+mision = input("¿Cuál es tu mayor sueño o meta en la vida?: ")
+
+
+
+print("\n================ HISTORIA DE NUESTRO PROTAGONISTA ================")
+print(f"¡Hola, {nombre}! Tienes {edad} años y vives en {ciudad}.")
+print(f"Cada día, mientras trabajas como {profesion}, sueñas con alcanzar tu gran meta: {mision}.")
+print(f"Un día cualquiera, caminando junto a {companero}, terminaron explorando {lugar_favorito}.")
+print(f"Fue allí donde la vida de {nombre} cambió para siempre, dando inicio a una gran aventura desde {ciudad}.")
+print("==================================================================")
