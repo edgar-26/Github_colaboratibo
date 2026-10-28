@@ -22,3 +22,9 @@ print(f"Cada día, mientras trabajas como {profesion}, sueñas con alcanzar tu g
 print(f"Un día cualquiera, caminando junto a {companero}, terminaron explorando {lugar_favorito}.")
 print(f"Fue allí donde la vida de {nombre} cambió para siempre, dando inicio a una gran aventura desde {ciudad}.")
 print("==================================================================")
+transporte = input("¿Cuál es tu medio de transporte favorito?: ")
+habilidad = input("¿Qué habilidad especial te gustaría tener?: ")
+
+print(f"Para continuar su aventura, {nombre} viajó en {transporte} hacia nuevos lugares desconocidos.")
+print(f"Durante el viaje soñó con tener la habilidad de {habilidad}.")
+print(f"Al final, {nombre} comprendió que con esfuerzo y perseverancia puede cumplir su meta: {mision}.")
